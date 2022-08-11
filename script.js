@@ -5,4 +5,5 @@ tasks.forEach(function(elem) {
     const lists = list.appendChild(document.createElement("li"));
     lists.classList.add("list");
     lists.textContent = elem;
+    
 }) 
