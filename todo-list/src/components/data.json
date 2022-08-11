@@ -1,0 +1,21 @@
+[{
+    "id": 1,
+    "task": "Buy lemonade",
+    "complete": true
+  }, {
+    "id": 2,
+    "task": "Make toasts",
+    "complete": false
+  }, {
+    "id": 3,
+    "task": "Repair car",
+    "complete": true
+  }, {
+    "id": 4,
+    "task": "Play games",
+    "complete": true
+  }, {
+    "id": 5,
+    "task": "'Pet a cat",
+    "complete": true
+  }]
