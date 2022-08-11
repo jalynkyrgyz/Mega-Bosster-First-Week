@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+    align-content: center;
+
+}
+
+.container {
+    margin-left: 460px;
+    background: yellow;
+    border: 2px solid red;
+    width: 350px;
+}
+
+ol {
+    width: 150px;
+}
