@@ -1,22 +1,28 @@
-let currentDay = document.getElementById("day");
-let currentHour = document.getElementById("hour");
-
-
-
-let date = new Date();
-
-let day = date.getDay();
 function showCurrentDay () {
+    let date = new Date();
+    let day = date.getDay();
     let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thirsday", "Friday", "Saturday"];
     return days[day]
 };
-currentDay.innerHTML = "Today is:  " + showCurrentDay(day)
+document.getElementById("day").innerHTML = "Today is:  " + showCurrentDay(day)
 
-let hour = date.getHours();
+function zero_first(value){
+        if (value < 10) {
+            value='0'+value;
+        }
+        return value;
+    }
 
-let minute = date.getMinutes();
-let second = date.getSeconds();
-let prepand = (hour >= 12)? "PM" : "AM";
-hour = (hour >= 12) ? hour - 12: hour;
+function current_hour () {
+    let date = new Date();
+    let hour = zero_first(date.getHours()) ;
+    let minute = zero_first (date.getMinutes());
+    let second = zero_first (date.getSeconds());
+    let prepand = (hour >= 12)? "PM" : "AM";
+    hour = (hour >= 12) ? hour - 12: hour;
+    return "Current time is: " + hour + " "+ prepand + ": " + minute + ": " + second;
+}
 
-currentHour.innerText = "Current time is: " + hour + " "+ prepand+ ": " + minute + ": " + second;
+setInterval(function () {
+    document.getElementById("hour").innerHTML = current_hour();
+}, 1000);
