@@ -1,22 +1,18 @@
-let currentDay = document.getElementById("day");
-let currentHour = document.getElementById("hour");
+const str = prompt("Please insert your numbers");
 
+const numStr = str.split('').map(
+    function(item){
+        return +item;        
+    }
+);
 
+const orderedArr = numStr.sort(
+    function(a, b) {
+        return b - a;
+    }
+)
 
-let date = new Date();
+const bigNumber = orderedArr.join("");
 
-let day = date.getDay();
-function showCurrentDay () {
-    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thirsday", "Friday", "Saturday"];
-    return days[day]
-};
-currentDay.innerHTML = "Today is:  " + showCurrentDay(day)
-
-let hour = date.getHours();
-
-let minute = date.getMinutes();
-let second = date.getSeconds();
-let prepand = (hour >= 12)? "PM" : "AM";
-hour = (hour >= 12) ? hour - 12: hour;
-
-currentHour.innerText = "Current time is: " + hour + " "+ prepand+ ": " + minute + ": " + second;
+let getBigNumber = document.getElementById("number");
+getBigNumber.innerHTML = "You inserted: " + str + " => So the biggest number will be: " + bigNumber;
