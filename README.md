@@ -1,12 +1,13 @@
-Second task showing current date and time placed in branch "current-date".
+1. Second task showing current date and time placed in branch "current-date".
 
-Third task making the largest number from numbers placed in branch "big-number".
+2. Third task making the largest number from numbers placed in branch "big-number".
 
-Forth task reversing longer than 5 letters word placed in branch "sentence-reversed-word".
-Fifth task with ToDo list placed in branch "todo-list".
+3. Forth task reversing longer than 5 letters word placed in branch "sentence-reversed-word".
 
-Sixth task with updating current date located in branch "updated-current-date". This branch was merged from the branch "current-date".
+4. Fifth task with ToDo list placed in branch "todo-list".
 
-Seventh task the ToDo list within REACT framework placed in branch "todo-list-react".
+5. Sixth task with updating current date located in branch "updated-current-date". This branch was merged from the branch "current-date".
 
-Eightth task with counters of increment and decrement placed in branch "counter-react".
+6. Seventh task the ToDo list within REACT framework placed in branch "todo-list-react".
+
+7. Eightth task with counters of increment and decrement placed in branch "counter-react".
