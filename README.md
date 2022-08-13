@@ -10,4 +10,7 @@
 
 6. Seventh task the ToDo list within REACT framework placed in branch "todo-list-react".
 
-7. Eightth task with counters of increment and decrement placed in branch "counter-react".
+7. Eighth task with counters of increment and decrement placed in branch "counter-react".
+
+8. Ninth task with counters and auto decrement placed in branch "modernised-counter-react". This task has been accomplished with some defects. 
+
