@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import './App.css';
 
 function App() {
-  const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState(1000);
 
   // increse
   const increaseCounter = () => {
@@ -23,6 +23,14 @@ function App() {
     setCounter(0)
   }
 
+   // autodecrement
+   const autoDecrement = () => {
+    
+    setInterval(() => {     
+       setCounter((count) => count - 1)
+   },1000)      
+   }
+
 
   return (
     <div className="App">
@@ -34,6 +42,7 @@ function App() {
         <button className="control__btn" onClick={increaseCounter}>+</button>
         <button className="control__btn" onClick={decreaseCounter}>-</button>
         <button className="reset" onClick={resetCounter}>Reset</button>
+        <button className='auto_decrement' onClick={autoDecrement}> Auto decrement </button>
       </div>
       </div>
     </div>
