@@ -1,3 +1,5 @@
+All tasks are completed.
+
 1. Second task showing current date and time placed in branch "current-date".
 
 2. Third task making the largest number from numbers placed in branch "big-number".
@@ -12,5 +14,5 @@
 
 7. Eighth task with counters of increment and decrement placed in branch "counter-react".
 
-8. Ninth task with counters and auto decrement placed in branch "modernised-counter-react". This task has been accomplished with some defects. 
+8. Ninth task with counters and auto decrement placed in branch "modernised-counter-react". This task has been merged from the branch "counter-react" 
 
