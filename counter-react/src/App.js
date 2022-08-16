@@ -24,7 +24,7 @@ function App() {
 
    // autodecrement
   useEffect(()=> {
-    const autoDecrement = null;
+    let autoDecrement = null;
     if(!counter) {
       setDisabledClick(false)
     }
@@ -47,10 +47,10 @@ function App() {
       <h2>Counter</h2>
       <span className="counter__output">
         <input className='input_place' type={'number'} value={counter} placeholder = {"Insert your number"} 
-          onChange={e=>{
+        onChange={e=>{
             setCounter(+e.target.value> 1000 ? counter : e.target.value)
             setDisabledClick(true)
-          }}  />
+        }}  />
       </span>
       <div className="btn__container">
         <button className="control__btn" onClick={increaseCounter}>+</button>

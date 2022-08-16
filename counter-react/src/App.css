@@ -25,6 +25,14 @@
   color: rgb(116, 7, 7);
 }
 
+.input_place {
+  width: 80%;
+  height: 150px;
+  text-align: center;
+  font-size: 100px;
+  border: none;
+}
+
 .btn__container {
   display: flex;
   justify-content: center;
