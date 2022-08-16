@@ -24,17 +24,13 @@ function App() {
   }
 
    // autodecrement
-   const autoDecrement = () => {
-    
-    setInterval(() => {     
-       setCounter((count) => count - 1)
-   },1000)      
-   }
+  
 
 
   return (
     <div className="App">
        <h1>Task with counter using react</h1>
+       <h2>Previous task with modernised autodecrement</h2>
       <div className="counter">
       <h2>Counter</h2>
       <span className="counter__output">{counter}</span>
@@ -42,7 +38,7 @@ function App() {
         <button className="control__btn" onClick={increaseCounter}>+</button>
         <button className="control__btn" onClick={decreaseCounter}>-</button>
         <button className="reset" onClick={resetCounter}>Reset</button>
-        <button className='auto_decrement' onClick={autoDecrement}> Auto decrement </button>
+        
       </div>
       </div>
     </div>
