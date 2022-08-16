@@ -53,8 +53,8 @@ function App() {
         }}  />
       </span>
       <div className="btn__container">
-        <button className="control__btn" onClick={increaseCounter}>+</button>
-        <button className="control__btn" onClick={decreaseCounter}>-</button>
+        <button className="control__btn" disabled={disabledClick} onClick={increaseCounter}>+</button>
+        <button className="control__btn" disabled={disabledClick} onClick={decreaseCounter}>-</button>
         <button className="reset" onClick={resetCounter}>Reset</button>
         
       </div>
